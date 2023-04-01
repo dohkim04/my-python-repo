@@ -129,3 +129,11 @@ assert pairs == [
     ("ashley", "ashley@example.com"),
     ("elizabeth", "elizabeth@example.com"),
     ("dalton", "dalton@example.com"),], f"Expected `pairs` to be [('ashley', 'ashley@example.com'), ('elizabeth', 'elizabeth@example.com'), ('dalton', 'dalton@example.com')] but got: {repr(pairs)}"
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > python3.7 using-dictionaries.py 
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > echo $?
+# 0
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ 
+# All errors were corrected! 
