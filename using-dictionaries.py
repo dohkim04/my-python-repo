@@ -96,3 +96,8 @@ assert email_list == [
     "elizabeth@example.com",
     "dalton@example.com",
 ], f"Expected `email_list` to be ['ashely@example.com', 'elizabeth@example.com', 'dalton@example.com'] but got: {repr(email_list)}"
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ python3.7 using-dictionaries.py 
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ echo $?
+# 0
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ 
