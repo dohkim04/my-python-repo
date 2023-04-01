@@ -77,3 +77,10 @@ assert users == ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'], f"Expected
 # 7) Slice the users lists to return the 3rd and 4th items and assign the result to `center_users`
 center_users = users[2:4:1]
 assert center_users == ['alice', 'andy'], f"Expected `users` to be ['alice', 'andy'] but got: {repr(center_users)}"
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v1) $ \
+# > python3.7 using-list.py 
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v1) $ echo $?
+# 0
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v1) $ 
+# Therefore, there was no error in executing this python file. Success!!
