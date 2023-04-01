@@ -56,7 +56,7 @@ print("Slicing with -1 negative step:", message[:int(-len(message)-2)])
 
 
 # set up last positive index out of the range and check error!!
-print("Slicing with a positive step:", message[:int(len(message))])
+print("Slicing with a positive step:", message[:int(len(message)+1)])
 
 
 
