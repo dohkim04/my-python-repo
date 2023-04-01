@@ -56,7 +56,14 @@ users.insert(1, 'melody')
 
 assert users == ['kevin', 'melody', 'alice'], f"Expected `users` to be ['kevin', 'melody', 'alice'] but got: {repr(users)}"
 
+# > python3.7 using-list.py 
+# Traceback (most recent call last):
+#  File "using-list.py", line 61, in <module>
+#    assert users == ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'], f"Expected `users` to be ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'] but got: {repr(users)}"
+# AssertionError: Expected `users` to be ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'] but got: ['kevin', 'melody', 'alice']
+
 # 6) Add the users 'andy', 'wanda', and 'jim' to the users list using a single command
+users += ['andy','wanda','jim']
 
 assert users == ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'], f"Expected `users` to be ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'] but got: {repr(users)}"
 
