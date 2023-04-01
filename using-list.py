@@ -32,9 +32,17 @@ del users[1]
 
 assert users == ['kevin', 'alice'], f"Expected `users` to be ['kevin', 'alice'] but got: {repr(users)}"
 
+
+# > python3.7 using-list.py 
+# Traceback (most recent call last):
+#  File "using-list.py", line 37, in <module>
+#    assert rev_users == ['alice', 'kevin'], f"Expected `rev_users` to be ['alice', 'kevin'] but got: {repr(rev_users)}"
+# NameError: name 'rev_users' is not defined
+
 # 4) Reverse the users list and assign the result to `rev_users`
 # created rev_users list using reversed function
 rev_users = list(reversed(users))
+
 assert rev_users == ['alice', 'kevin'], f"Expected `rev_users` to be ['alice', 'kevin'] but got: {repr(rev_users)}"
 
 # 5) Add the user 'melody' to users where 'bob' used to be.
