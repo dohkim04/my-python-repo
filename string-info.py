@@ -49,7 +49,7 @@ print("Slicing before reaching index at -12:", message[:int(-len(message)):-3])
 print("Slicing before reaching index at -14:", message[:int(-len(message)-2):-3])
 
 # set up last negative index out of the range and check again
-print("Slicing with -1 negative step", message[:int(-len(message)-2):-1])
+print("Slicing with -1 negative step:", message[:int(-len(message)-2):-1])
 
 
 '''
