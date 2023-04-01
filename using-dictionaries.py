@@ -1,4 +1,14 @@
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 2, in <module>
+#     assert emails == {}, f"Expected `emails` to be {{}} but got: {repr(emails)}"
+# NameError: name 'emails' is not defined
+
 # 1) Set the emails variable to be an empty dictionary
+# assign an empty dictionary to emails variable below
+emails = {}
+
 assert emails == {}, f"Expected `emails` to be {{}} but got: {repr(emails)}"
 
 # 2) Add 'ashley', 'craig', and 'elizabeth' to the emails dictionary without reassigning the variable.
