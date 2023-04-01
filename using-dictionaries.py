@@ -101,3 +101,11 @@ assert email_list == [
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ echo $?
 # 0
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ 
+
+# 7) Return a list of tuples called `pairs` representing the key/value pairs in `emails`.
+
+assert pairs == [
+    ("ashley", "ashley@example.com"),
+    ("elizabeth", "elizabeth@example.com"),
+    ("dalton", "dalton@example.com"),], f"Expected `pairs` to be [('ashley', 'ashley@example.com'), ('elizabeth', 'elizabet
+h@example.com'), ('dalton', 'dalton@example.com')] but got: {repr(pairs)}"
