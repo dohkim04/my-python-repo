@@ -102,7 +102,21 @@ assert email_list == [
 # 0
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ 
 
+
+# Below is a missing task to be completed.
 # 7) Return a list of tuples called `pairs` representing the key/value pairs in `emails`.
+
+# upon executing this script, there was an error below.
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+#> python3.7 using-dictionaries.py 
+#Traceback (most recent call last):
+#  File "using-dictionaries.py", line 107, in <module>
+#    assert pairs == [
+# NameError: name 'pairs' is not defined
+
+
+# Solution: define pairs dictionary
+pairs = list(email.items())
 
 assert pairs == [
     ("ashley", "ashley@example.com"),
