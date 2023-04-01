@@ -101,3 +101,39 @@ assert email_list == [
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ echo $?
 # 0
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ 
+
+
+# Below is a missing task to be completed.
+# 7) Return a list of tuples called `pairs` representing the key/value pairs in `emails`.
+
+# upon executing this script, there was an error below.
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+#> python3.7 using-dictionaries.py 
+#Traceback (most recent call last):
+#  File "using-dictionaries.py", line 107, in <module>
+#    assert pairs == [
+# NameError: name 'pairs' is not defined
+
+
+# Solution: define pairs dictionary
+pairs = list(emails.items())
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 119, in <module>
+#     pairs = list(email.items())
+# NameError: name 'email' is not defined
+# Solution: correct a typo in the name: email --> emails
+assert pairs == [
+    ("ashley", "ashley@example.com"),
+    ("elizabeth", "elizabeth@example.com"),
+    ("dalton", "dalton@example.com"),], f"Expected `pairs` to be [('ashley', 'ashley@example.com'), ('elizabeth', 'elizabeth@example.com'), ('dalton', 'dalton@example.com')] but got: {repr(pairs)}"
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > python3.7 using-dictionaries.py 
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > echo $?
+# 0
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ 
+# All errors were corrected! 
