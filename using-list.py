@@ -3,6 +3,9 @@ using-list.py
 """
 # 1) Set the users variable to be an empty list
 
+# assign an empty list to users list variable
+users = []
+
 assert users == [], f"Expected `users` to be [] but got: {repr(users)}"
 
 # 2) Add 'kevin', 'bob', and 'alice' to the users list in that order without reassigning the variable.
