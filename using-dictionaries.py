@@ -75,7 +75,15 @@ assert users == [
     "dalton",
 ], f"Expected `users` to be ['ashley', 'elizabeth', 'dalton'] but got: {repr(users)}"
 
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 80, in <module>
+#     assert email_list == [
+# NameError: name 'email_list' is not defined
+
 # 6) Return a list of values from the emails dictionary as `email_list`
+email_list = emails.values()
 
 assert email_list == [
     "ashley@example.com",
