@@ -116,7 +116,7 @@ assert email_list == [
 
 
 # Solution: define pairs dictionary
-pairs = list(email.items())
+pairs = list(emails.items())
 
 assert pairs == [
     ("ashley", "ashley@example.com"),
