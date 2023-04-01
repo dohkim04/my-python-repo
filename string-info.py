@@ -59,9 +59,9 @@ print("Slicing with -1 negative step:", message[:int(-len(message)-2)])
 print("Slicing with a positive step:", message[:int(len(message)+1)])
 
 
-
-
 '''
+Revo@UwordI:~/environment/my-python-repo (dkim-03312023) $ \
+> ./string-info.py 
 Enter a message: Text Message
 Fist character: T
 Last character: e
@@ -70,8 +70,14 @@ Even index characters: Tx esg
 Odd index characters: etMsae
 Reversed message: egasseM txeT
 Slicing: esMx
-Slicing before reaching index at -12: esMx # No error!
-Slicing before reaching index at -14: esMx # No error!
+Slicing before reaching index at -12: esMx
+Slicing before reaching index at -14: esMx
+Slicing with -1 negative step: egasseM txeT
+Slicing with -1 negative step: 
+Slicing with a positive step: Text Message
+
+# result: 
+# for uncertain reason, the String index out of the range
+# was tolerated when using Cloud9 system 
+# will need to test in Python in other IDE environment.
 '''
-
-
