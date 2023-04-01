@@ -37,7 +37,15 @@ assert emails == {
     "ashley": "ashley@example.com",
     "elizabeth": "elizabeth@example.com",}, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com'}} but got: {repr(emails)}"
 
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 46, in <module>
+#     }, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com', 'dalton': 'dalton@example.com'}} but got: {repr(emails)}"
+# AssertionError: Expected `emails` to be {'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com', 'dalton': 'dalton@example.com'} but got: {'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com'}
+
+
 # 4) Add 'dalton' to the emails dictionary without reassigning the variable.
+emails['dalton'] = 'dalton@example.com'
 
 assert emails == {
     "ashley": "ashley@example.com",
