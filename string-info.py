@@ -30,5 +30,23 @@ print("Reversed message:", message[::-1])
 
 #extra practice using negative index and negative steps
 print("Slicing:", message[:int(-len(message)-1):-3]) 
+# outcome: esMX
+#  T   e   x  t [ ]  M  e  s  s  a  g  e
+#-12 -11 -10 -9  -8 -7 -6 -5 -4 -3 -2 -1
+# first index is -1 in slicing function: 'e'
+# next index is  -4: 's'
+# next index is  -7: 'M'
+# next index is -11: "x"
+# leng(message) is -12 
+# so, int(-len(message)-1) is -13, that is String index out of the range
+# still no error occured
+# Revo@UwordI:~/environment/my-python-repo (dkim-03312023) $ echo $?
+# 0 => no error occurred
+
+print("Slicing before reaching index at -12:", message[:int(-len(message)):-3])
+
+# check whether index -14 is considered as out of the range.
+print("Slicing before reaching index at -14:", message[:int(-len(message)-2):-3])
+
 
 
