@@ -107,5 +107,4 @@ assert email_list == [
 assert pairs == [
     ("ashley", "ashley@example.com"),
     ("elizabeth", "elizabeth@example.com"),
-    ("dalton", "dalton@example.com"),], f"Expected `pairs` to be [('ashley', 'ashley@example.com'), ('elizabeth', 'elizabet
-h@example.com'), ('dalton', 'dalton@example.com')] but got: {repr(pairs)}"
+    ("dalton", "dalton@example.com"),], f"Expected `pairs` to be [('ashley', 'ashley@example.com'), ('elizabeth', 'elizabeth@example.com'), ('dalton', 'dalton@example.com')] but got: {repr(pairs)}"
