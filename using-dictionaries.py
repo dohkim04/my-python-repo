@@ -53,7 +53,15 @@ assert emails == {
     "dalton": "dalton@example.com",
 }, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com', 'dalton': 'dalton@example.com'}} but got: {repr(emails)}"
 
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v2) $ python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 58, in <module>
+#     assert users == [
+# NameError: name 'users' is not defined
+
+
 # 5) Return a list of keys from the emails dictionary as `users`
+users = emails.keys()
 
 assert users == [
     "ashley",
