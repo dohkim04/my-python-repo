@@ -45,7 +45,14 @@ rev_users = list(reversed(users))
 
 assert rev_users == ['alice', 'kevin'], f"Expected `rev_users` to be ['alice', 'kevin'] but got: {repr(rev_users)}"
 
+# > python3.7 using-list.py 
+# Traceback (most recent call last):
+#  File "using-list.py", line 50, in <module>
+#    assert users == ['kevin', 'melody', 'alice'], f"Expected `users` to be ['kevin', 'melody', 'alice'] but got: {repr(users)}"
+# AssertionError: Expected `users` to be ['kevin', 'melody', 'alice'] but got: ['kevin', 'alice']
+
 # 5) Add the user 'melody' to users where 'bob' used to be.
+users.insert(1, 'melody')
 
 assert users == ['kevin', 'melody', 'alice'], f"Expected `users` to be ['kevin', 'melody', 'alice'] but got: {repr(users)}"
 
