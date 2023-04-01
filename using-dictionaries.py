@@ -83,7 +83,13 @@ assert users == [
 # NameError: name 'email_list' is not defined
 
 # 6) Return a list of values from the emails dictionary as `email_list`
-email_list = emails.values()
+email_list = list(emails.values())
+
+#Traceback (most recent call last):
+#  File "using-dictionaries.py", line 92, in <module>
+#    ], f"Expected `email_list` to be ['ashely@example.com', 'elizabeth@example.com', 'dalton@example.com'] but got: {repr(email_list)}"
+#AssertionError: Expected `email_list` to be ['ashely@example.com', 'elizabeth@example.com', 'dalton@example.com'] but got: dict_values(['ashley@example.com', 'elizabeth@example.com', 'dalton@example.com'])
+# Solution: convert dict_values to a list type
 
 assert email_list == [
     "ashley@example.com",
