@@ -28,4 +28,7 @@ print("Odd index characters:", message[1::2])
 # reverse a string
 print("Reversed message:", message[::-1])
 
+#extra practice using negative index and negative steps
+print("Slicing:", message[:int(-len(message)-1):-3]) 
+
 
