@@ -61,7 +61,13 @@ assert emails == {
 
 
 # 5) Return a list of keys from the emails dictionary as `users`
-users = emails.keys()
+users = list(emails.keys())
+
+#Traceback (most recent call last):
+#  File "using-dictionaries.py", line 70, in <module>
+#    ], f"Expected `users` to be ['ashley', 'elizabeth', 'dalton'] but got: {repr(users)}"
+#AssertionError: Expected `users` to be ['ashley', 'elizabeth', 'dalton'] but got: dict_keys(['ashley', 'elizabeth', 'dalton'])
+# Solution: I have to convert dict_keys to a list type
 
 assert users == [
     "ashley",
