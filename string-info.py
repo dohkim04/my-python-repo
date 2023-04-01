@@ -51,6 +51,15 @@ print("Slicing before reaching index at -14:", message[:int(-len(message)-2):-3]
 # set up last negative index out of the range and check again
 print("Slicing with -1 negative step:", message[:int(-len(message)-2):-1])
 
+# set up last negative index out of the range and check again!
+print("Slicing with -1 negative step:", message[:int(-len(message)-2)])
+
+
+# set up last positive index out of the range and check error!!
+print("Slicing with a positive step:", message[:int(len(message))])
+
+
+
 
 '''
 Enter a message: Text Message
