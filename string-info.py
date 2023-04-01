@@ -48,5 +48,21 @@ print("Slicing before reaching index at -12:", message[:int(-len(message)):-3])
 # check whether index -14 is considered as out of the range.
 print("Slicing before reaching index at -14:", message[:int(-len(message)-2):-3])
 
+# set up last negative index out of the range and check again
+print("Slicing with -1 negative step", message[:int(-len(message)-2):-1])
+
+
+'''
+Enter a message: Text Message
+Fist character: T
+Last character: e
+Middle character: e
+Even index characters: Tx esg
+Odd index characters: etMsae
+Reversed message: egasseM txeT
+Slicing: esMx
+Slicing before reaching index at -12: esMx # No error!
+Slicing before reaching index at -14: esMx # No error!
+'''
 
 
