@@ -118,6 +118,13 @@ assert email_list == [
 # Solution: define pairs dictionary
 pairs = list(emails.items())
 
+# Revo@UwordI:~/environment/my-python-repo (dkim-0401-2023-v2-missing-task-added) $ \
+# > python3.7 using-dictionaries.py 
+# Traceback (most recent call last):
+#   File "using-dictionaries.py", line 119, in <module>
+#     pairs = list(email.items())
+# NameError: name 'email' is not defined
+# Solution: correct a typo in the name: email --> emails
 assert pairs == [
     ("ashley", "ashley@example.com"),
     ("elizabeth", "elizabeth@example.com"),
