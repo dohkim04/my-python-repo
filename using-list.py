@@ -5,10 +5,20 @@ using-list.py
 
 # assign an empty list to users list variable
 users = []
-
 assert users == [], f"Expected `users` to be [] but got: {repr(users)}"
 
+# > python3.7 using-list.py 
+# Traceback (most recent call last):
+#  File "using-list.py", line 13, in <module>
+#    assert users == ['kevin', 'bob', 'alice'], f"Expected `users` to be ['kevin', 'bob', 'alice'] but got: {repr(users)}"
+# AssertionError: Expected `users` to be ['kevin', 'bob', 'alice'] but got: []
+
 # 2) Add 'kevin', 'bob', and 'alice' to the users list in that order without reassigning the variable.
+
+# Let's add all three new values into the users list.
+users.append('kevin')
+users.append('bob')
+users.append('alice')
 
 assert users == ['kevin', 'bob', 'alice'], f"Expected `users` to be ['kevin', 'bob', 'alice'] but got: {repr(users)}"
 
