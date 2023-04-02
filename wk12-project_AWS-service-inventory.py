@@ -72,6 +72,11 @@ print(' - AWS Service List:', aws_service_list)
 print(' - The length of the list:', len(aws_service_list))
 print("==========\n")
 
+# Output
+'''
+ - AWS Service List: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']                          
+ - The length of the list: 10    
+'''
 ####################################################################
 #4. Remove two specific services from the list by name or by index.
 print("4. Remove two specific services from the list by name or by index.")
@@ -80,6 +85,12 @@ aws_service_list.remove('Lightsail')
 print("After removing 'Lightsail' from the list:", aws_service_list)
 del aws_service_list[6]
 print("After removing an element at index 6 from the list:", aws_service_list)
+
+# Output
+'''
+After removing 'Lightsail' from the list: ['VPC', 'EC2', 'Lambda', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']                  
+After removing an element at index 6 from the list: ['VPC', 'EC2', 'Lambda', 'S3', 'AppSync', 'ECR', 'Glacier', 'ECS']  
+'''
 
 """
 5. Print the new list and the new length of the list.
