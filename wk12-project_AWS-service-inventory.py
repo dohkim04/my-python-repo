@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.7
+
 # 12th week - a mini-project for Python codes 
 # Date: 04/02/2023
 # Title: AWS Service Inventory
@@ -24,7 +25,7 @@ aws_service_list.append('Lambda')
 aws_service_list.append('Lightsail')
 aws_service_list.append('ECR')
 aws_service_list.append('ECS')
-print(" # Services were added at the end of the list using append:\n  ", aws_service_list) 
+print(" # Services were added at the end of the list using append:\n", aws_service_list) 
 # 'append' will add each element at the end of the list
 
 aws_service_list.insert(3,'S3')
