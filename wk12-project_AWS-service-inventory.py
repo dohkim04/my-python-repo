@@ -17,9 +17,20 @@ print(aws_service_list)
 
 # 2. Populate the list using append or insert.
 aws_service_list.append('EC2')
-aws_service_list.append('Lambda, Lightsail')
-aws_service_list.append('ECR', 'ECS', 'S3', 'EFS', 'Glacier', 'Snow')
-print(aws_service_list) # Check the content of this list.
+aws_service_list.append('Lambda')
+aws_service_list.append('Lightsail')
+aws_service_list.append('ECR')
+aws_service_list.append('ECS')
+print("The initial service list:", aws_service_list)
+aws_service_list.insert(3,'S3')
+print("After adding 'S3' at index 3:", aws_service_list)
+aws_service_list.insert(5,'EFS')
+print("After adding 'EFS' at index 6:", aws_service_list)
+aws_service_list.insert(-1,'Glacier')
+print("After adding 'Goacier' before index -1:", aws_service_list)
+aws_service_list.insert(0, 'VPC')
+print("After adding 'VPC' before index 0:", aws_service_list)
+# print(aws_service_list) # Check the content of this list.
 """
 3. Print the list and the length of the list.
 4. Remove two specific services from the list by name or by index.
