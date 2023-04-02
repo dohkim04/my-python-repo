@@ -1,7 +1,3 @@
-"""
-Your module description
-"""
-
 #!/usr/bin/env python3.7
 # Python String Split and Join
 '''
