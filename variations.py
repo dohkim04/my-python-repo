@@ -54,3 +54,11 @@ print("Capitalized:", message.capitalize())
 each_word = message.split()
 print(each_word)
 
+# Revo@UwordI:~/environment/my-python-repo (dkim-04022023-v1) $ ./variations.py 
+# Enter a message: This is a testing Message                                                                    
+# Lowercase: this is a testing message
+# Uppercase: THIS IS A TESTING MESSAGE
+# Title case: This Is A Testing Message
+# Capitalized: This is a testing message
+# ['This', 'is', 'a', 'testing', 'Message']
+
