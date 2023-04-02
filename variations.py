@@ -17,3 +17,10 @@ print("Uppercase:", message.upper())
 # Enter a message: This is a testing message.
 # Lowercase: this is a testing message.
 # Uppercase: THIS IS A TESTING MESSAGE.
+
+#4. title case
+print("Title case:", message.title())
+
+#5. capitalize
+print("Capitalized:", message.capitalized())
+
