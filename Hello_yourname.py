@@ -29,3 +29,10 @@ if __name__ == '__main__':
     first_name = input("What is your first name? ")
     last_name = input("What is your last name? ")
     print(print_full_name(first_name, last_name))
+    
+# Execute the above Python code by clicking Run in Cloud9 window
+'''
+What is your first name? Do Hyung
+What is your last name? Kim
+Hello Do Hyung Kim! You just delved into python.
+'''
