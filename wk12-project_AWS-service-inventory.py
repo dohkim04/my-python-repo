@@ -36,8 +36,25 @@ print("After adding 'AppSync' before index -4:", aws_service_list)
 print("Note:")
 print("When using a minus index number, a new element will be added before the designated index number")
 print('When using a positive index number, a new element will be added at the designated index number')
+
+# Output
+'''
+~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
+[]
+The initial service list: ['EC2', 'Lambda', 'Lightsail', 'ECR', 'ECS']
+After adding 'S3' at index 3: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'ECS']
+After adding 'EFS' at index 6: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'ECS']
+After adding 'Goacier' before index -1: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
+After adding 'VPC' at index 0: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
+After adding 'AppSync' before index -4: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']
+Note:
+When using a minus index number, a new element will be added before the designated index number
+When using a positive index number, a new element will be added at the designated index number
+'''
+
+# 3. Print the list and the length of the list.
+
 """
-3. Print the list and the length of the list.
 4. Remove two specific services from the list by name or by index.
 5. Print the new list and the new length of the list.
 6. Push your code to GitHub and include the link in your LinkedIn write-up.
