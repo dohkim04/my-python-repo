@@ -9,23 +9,23 @@
 #  1. STRING first
 #  2. STRING last
 #
-'''
-Sample Input 0
-==>
-Ross
-Taylor
 
-Sample Output 0
-==>
-Hello Ross Taylor! You just delved into python.
-'''
-# use format function
+# Sample Input 0
+#
+# Ross
+# Taylor
+#
+# Sample Output 0
+#
+# Hello Ross Taylor! You just delved into python.
+#
+# Use a format function to pass first and last string value to each placeholder {} 
 
 def print_full_name(first, last):
     # Write your code here
-    print("Hello {} {}! You just delved into python.".format(first, last))
+    return ("Hello {} {}! You just delved into python.".format(first, last))
 
 if __name__ == '__main__':
     first_name = input()
     last_name = input()
-    print_full_name(first_name, last_name)
+    print(print_full_name(first_name, last_name))
