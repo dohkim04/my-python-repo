@@ -29,7 +29,9 @@ print("After adding 'EFS' at index 6:", aws_service_list)
 aws_service_list.insert(-1,'Glacier')
 print("After adding 'Goacier' before index -1:", aws_service_list)
 aws_service_list.insert(0, 'VPC')
-print("After adding 'VPC' before index 0:", aws_service_list)
+print("After adding 'VPC' at index 0:", aws_service_list)
+aws_service_list.insert(-4,'AppSync')
+print("After adding 'AppSync' before index -4:", aws_service_list)
 # print(aws_service_list) # Check the content of this list.
 """
 3. Print the list and the length of the list.
