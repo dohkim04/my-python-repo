@@ -2,8 +2,7 @@
 # 12th week - a mini-project for Python codes 
 # Date: 04/02/2023
 # Title: AWS Service Inventory
-
-# Create a list of services using Python. ex. S3, Lambda, EC2, etc.
+# Purpose: create a list of services using Python. ex. S3, Lambda, EC2, etc.
 
 ############## Instruction ######################
 #1. The initialization of a AWS Service List
@@ -16,7 +15,6 @@ print("==========\n")
 # Output:
 # ~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
 # []
-
 
 #################################################
 #2. Populate the list using append or insert
