@@ -1,13 +1,13 @@
 #!/usr/bin/env python3.7
-
-# Week 12 mini project
+# 12th week - a mini-project for Python codes 
+# Date: 04/02/2023
 # Title: AWS Service Inventory
 
 # Create a list of services using Python. ex. S3, Lambda, EC2, etc.
 
 ############## Instruction ######################
 #1. The initialization of a AWS Service List
-print()
+print("==========")
 print("1. The list should be empty initially.")
 aws_service_list = []
 print("The initial status of aws_service_list:", aws_service_list)
@@ -16,6 +16,7 @@ print("==========\n")
 # Output:
 # ~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
 # []
+
 
 #################################################
 #2. Populate the list using append or insert
@@ -50,33 +51,31 @@ print(" - After inserting 'AppSync' before index -4:\n", (aws_service_list))
 # print('When using a positive index number, a new element will be added at the designated index number')
 print("==========\n")
 
-# Printed the output for checking in the middle of the project
-'''
-~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
-[]
-The initial service list: ['EC2', 'Lambda', 'Lightsail', 'ECR', 'ECS']
-After adding 'S3' at index 3: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'ECS']
-After adding 'EFS' at index 6: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'ECS']
-After adding 'Goacier' before index -1: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
-After adding 'VPC' at index 0: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
-After adding 'AppSync' before index -4: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']
-Note:
-When using a minus index number, a new element will be added before the designated index number
-When using a positive index number, a new element will be added at the designated index number
-'''
+# Output
+# ~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
+# []
+# The initial service list: ['EC2', 'Lambda', 'Lightsail', 'ECR', 'ECS']
+# After adding 'S3' at index 3: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'ECS']
+# After adding 'EFS' at index 6: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'ECS']
+# After adding 'Goacier' before index -1: ['EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
+# After adding 'VPC' at index 0: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'ECR', 'EFS', 'Glacier', 'ECS']
+# After adding 'AppSync' before index -4: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']
+# Note:
+# When using a minus index number, a new element will be added before the designated index number
+# When using a positive index number, a new element will be added at the designated index number
+
 
 ##########################################################
 #3. Print the list and the length of the list
 print("3. Print the list and the length of the list.")
-print(' - AWS Service List:', aws_service_list)
+print(' - The initial AWS service list:', aws_service_list)
 print(' - The length of the list:', len(aws_service_list))
 print("==========\n")
 
 # Output
-'''
- - AWS Service List: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']                          
- - The length of the list: 10    
-'''
+# - AWS Service List: ['VPC', 'EC2', 'Lambda', 'Lightsail', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']                          
+# - The length of the list: 10    
+
 ####################################################################
 #4. Remove two specific services from the list by name or by index.
 print("4. Remove two specific services from the list by name or by index.")
@@ -85,15 +84,21 @@ aws_service_list.remove('Lightsail')
 print("After removing 'Lightsail' from the list:", aws_service_list)
 del aws_service_list[6]
 print("After removing an element at index 6 from the list:", aws_service_list)
-
+print("==========\n")
 # Output
 '''
 After removing 'Lightsail' from the list: ['VPC', 'EC2', 'Lambda', 'S3', 'AppSync', 'ECR', 'EFS', 'Glacier', 'ECS']                  
 After removing an element at index 6 from the list: ['VPC', 'EC2', 'Lambda', 'S3', 'AppSync', 'ECR', 'Glacier', 'ECS']  
 '''
 
+######################################################
+#5. Print the new list and the new length of the list.
+print("5. Print the new list and the new length of the list.")
+print(' - The updated AWS service list:', aws_service_list)
+print(' - The length of the list:', len(aws_service_list))
+print("==========\n")
+
 """
-5. Print the new list and the new length of the list.
 6. Push your code to GitHub and include the link in your LinkedIn write-up.
 """
 
