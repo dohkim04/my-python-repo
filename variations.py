@@ -36,15 +36,10 @@ print("Capitalized:", message.capitalize())
 #     print("Capitalized:", message.capitalized())
 # AttributeError: 'str' object has no attribute 'capitalized'
 
-# The function name was wrong: capitalize() is a right one.
-# corrected the function name.
+# Used a wrong expression: capitalize() is correct.
 # executed the Python file again and see the output below:
 
 # Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v3) $ ./variations.py 
-# Enter a message: This is a testing message.
-# Lowercase: this is a testing message.
-# Uppercase: THIS IS A TESTING MESSAGE.
-# Title case: This Is A Testing Message.
 # Capitalized: This is a testing message.
 
 # Up to this point, all outputs were correct!
@@ -56,15 +51,18 @@ print("Words:", each_word_list)
 
 # Revo@UwordI:~/environment/my-python-repo (dkim-04022023-v1) $ ./variations.py 
 # Enter a message: This is a testing Message                                                                    
-# Lowercase: this is a testing message
-# Uppercase: THIS IS A TESTING MESSAGE
-# Title case: This Is A Testing Message
-# Capitalized: This is a testing message
 # ['This', 'is', 'a', 'testing', 'Message']
 
 #7. get the first and last word from a given string
-# sorting each word in alphabetical order 
-sorted_each_word_list = each_word_list.sorted()
+# sorted each word in alphabetical order first.
+
+# Traceback (most recent call last):
+#   File "./variations.py", line 67, in <module>
+#     sorted_each_word_list = each_word_list.sorted()
+# AttributeError: 'list' object has no attribute 'sorted'
+
+# Used a wrong syntax =>  Corrected the method expression below 
+sorted_each_word_list = sorted(each_word_list)
 
 # print the first word from the sorted_each_word_list
 print("Alphabetic First Word:", sorted_each_word_list[0])
