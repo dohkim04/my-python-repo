@@ -58,11 +58,11 @@ print("Words:", each_word_list)
 sorted_each_word_list = sorted(each_word_list)
 
 # print the sorted word list below:
-print(sorted)
+print("Sorted word list: ", sorted_each_word_list)
 # print the first word from the sorted_each_word_list
 print("Alphabetic First Word:", sorted_each_word_list[0])
 # print the lsat word from the sorted_each_word_list
-print("Alphabetic Last Word:", sorted_each_word_list[len(sorted_each_word_list)]-1)
+print("Alphabetic Last Word:", sorted_each_word_list[len(sorted_each_word_list)-1])
 
 # Revo@UwordI:~/environment/my-python-repo (dkim-04022023-v1) $ ./variations.py 
 # Enter a message: ThIs iS a tEsTinG mEssAGe
