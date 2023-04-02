@@ -18,6 +18,7 @@ print(aws_service_list)
 # 2. Populate the list using append or insert.
 aws_service_list.append('EC2')
 aws_service_list.append('Lambda, Lightsail')
+aws_service_list.append('ECR', 'ECS', 'S3, EFS, Glacier, Snow')
 print(aws_service_list) # Check the content of this list.
 """
 3. Print the list and the length of the list.
