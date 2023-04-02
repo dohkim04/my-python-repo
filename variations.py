@@ -50,9 +50,9 @@ print("Capitalized:", message.capitalize())
 # Up to this point, all outputs were correct!
 
 
-#6. get each word
-each_word = message.split()
-print(each_word)
+#6. get a list of each word
+each_word_list = message.split()
+print("Words:", each_word_list)
 
 # Revo@UwordI:~/environment/my-python-repo (dkim-04022023-v1) $ ./variations.py 
 # Enter a message: This is a testing Message                                                                    
@@ -62,3 +62,11 @@ print(each_word)
 # Capitalized: This is a testing message
 # ['This', 'is', 'a', 'testing', 'Message']
 
+#7. get the first and last word from a given string
+# sorting each word in alphabetical order 
+sorted_each_word_list = each_word_list.sorted()
+
+# print the first word from the sorted_each_word_list
+print("Alphabetic First Word:", sorted_each_word_list[0])
+# print the lsat word from the sorted_each_word_list
+print("Alphabetic First Word:", sorted_each_word_list[len(sorted_each_word_list)-1])
