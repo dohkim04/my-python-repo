@@ -22,5 +22,17 @@ print("Uppercase:", message.upper())
 print("Title case:", message.title())
 
 #5. capitalize
-print("Capitalized:", message.capitalized())
+print("Capitalized:", message.capitalize())
+
+# Execute this python file and see the results below:
+# Revo@UwordI:~/environment/my-python-repo (dkim-04012023-v3) $ \
+# > ./variations.py 
+# Enter a message: This is a testing message.
+# Lowercase: this is a testing message.
+# Uppercase: THIS IS A TESTING MESSAGE.
+# Title case: This Is A Testing Message.
+# Traceback (most recent call last):
+#   File "./variations.py", line 25, in <module>
+#     print("Capitalized:", message.capitalized())
+# AttributeError: 'str' object has no attribute 'capitalized'
 
