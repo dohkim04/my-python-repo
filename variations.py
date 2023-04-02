@@ -18,7 +18,7 @@ print("Uppercase:", message.upper())
 # Lowercase: this is a testing message.
 # Uppercase: THIS IS A TESTING MESSAGE.
 
-#4. title case
+#4. make title case
 print("Title case:", message.title())
 
 #5. capitalize
@@ -49,4 +49,8 @@ print("Capitalized:", message.capitalize())
 
 # Up to this point, all outputs were correct!
 
+
+#6. get each word
+each_word = message.split()
+print(each_word)
 
