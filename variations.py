@@ -57,6 +57,8 @@ print("Words:", each_word_list)
 # Used a wrong syntax. =>  Corrected the method expression below. 
 sorted_each_word_list = sorted(each_word_list)
 
+# print the sorted word list below:
+print(sorted)
 # print the first word from the sorted_each_word_list
 print("Alphabetic First Word:", sorted_each_word_list[0])
 # print the lsat word from the sorted_each_word_list
