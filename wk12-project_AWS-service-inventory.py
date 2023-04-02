@@ -9,9 +9,17 @@
 # 1. The list should be empty initially.
 aws_service_list = []
 print(aws_service_list)
-"""
-2. Populate the list using append or insert.
 
+# Output:
+# ~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
+# []
+
+
+# 2. Populate the list using append or insert.
+aws_service_list.append('EC2')
+aws_service_list.append('Lambda, Lightsail')
+print(aws_service_list) # Check the content of this list.
+"""
 3. Print the list and the length of the list.
 4. Remove two specific services from the list by name or by index.
 5. Print the new list and the new length of the list.
