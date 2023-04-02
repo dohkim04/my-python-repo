@@ -8,7 +8,7 @@
 # Instruction:
 # 1. The list should be empty initially.
 aws_service_list = []
-
+print(aws_service_list)
 """
 2. Populate the list using append or insert.
 
