@@ -32,4 +32,4 @@ if __name__ == '__main__':
 # Revo@UwordI:~/environment/my-python-repo (dkim-04022023-python-string-split-and-join) $ ./split\&join.py 
 # Enter your string: I am going to test this split and join function.
 # Word list: ['I', 'am', 'going', 'to', 'test', 'this', 'split', 'and', 'join', 'function.']
-# 
+# Split and join statement: I-am-going-ot-test-this-split-and-join-function.
