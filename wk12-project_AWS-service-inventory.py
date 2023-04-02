@@ -6,9 +6,11 @@
 # Create a list of services using Python. ex. S3, Lambda, EC2, etc.
 
 # Instruction:
+print("==========")
 print("1. The list should be empty initially.")
 aws_service_list = []
 print("The initial status of aws_service_list:", aws_service_list)
+print("\n")
 
 # Output:
 # ~/environment/my-python-repo (week12-mini-project) $ python3.7 wk12-project_AWS-service-inventory.py 
@@ -21,27 +23,29 @@ aws_service_list.append('Lambda')
 aws_service_list.append('Lightsail')
 aws_service_list.append('ECR')
 aws_service_list.append('ECS')
-print("The initial service list using append:", aws_service_list)
+print(" - The initial service list using append:", aws_service_list)
 
 aws_service_list.insert(3,'S3')
-print("After inserting 'S3' at index 3:", aws_service_list)
+print(" - After inserting 'S3' at index 3:", aws_service_list)
 
 aws_service_list.insert(5,'EFS')
-print("After inserting 'EFS' at index 6:", aws_service_list)
+print(" - After inserting 'EFS' at index 6:", aws_service_list)
 
 aws_service_list.insert(-1,'Glacier')
-print("After inserting 'Goacier' before index -1:", aws_service_list)
+print(" - After inserting 'Goacier' before index -1:", aws_service_list)
 
 aws_service_list.insert(0, 'VPC')
-print("After inserting 'VPC' at index 0:", aws_service_list)
+print(" - After inserting 'VPC' at index 0:", aws_service_list)
 
 aws_service_list.insert(-4,'AppSync')
-print("After inserting 'AppSync' before index -4:", aws_service_list)
+print(" - After inserting 'AppSync' before index -4:", aws_service_list)
 
+print("==========")
 # added comments
-print("Note:")
+print("## Note ##")
 print("When using a minus index number, a new element will be added before the designated index number")
 print('When using a positive index number, a new element will be added at the designated index number')
+print("==========\n")
 
 # Printed output
 '''
@@ -58,9 +62,9 @@ When using a minus index number, a new element will be added before the designat
 When using a positive index number, a new element will be added at the designated index number
 '''
 
-# 3. Print the list and the length of the list.
-print('\n=================================\nAWS Service List: ', aws_service_list)
-print("The length of the aws_service_list: ", len(aws_service_list))
+print("3. Print the list and the length of the list.")
+print(' - AWS Service List:', aws_service_list)
+print(' - The length of the list:', len(aws_service_list))
 
 """
 4. Remove two specific services from the list by name or by index.
