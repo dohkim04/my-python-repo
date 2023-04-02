@@ -23,9 +23,9 @@
 
 def print_full_name(first, last):
     # Write your code here
-    return ("Hello {} {}! You just delved into python.".format(first, last))
+    return "Hello {} {}! You just delved into python.".format(first, last)
 
 if __name__ == '__main__':
-    first_name = input()
-    last_name = input()
+    first_name = input("What is your first name?")
+    last_name = input("What is your last name?")
     print(print_full_name(first_name, last_name))
