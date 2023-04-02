@@ -33,6 +33,9 @@ print("After adding 'VPC' at index 0:", aws_service_list)
 aws_service_list.insert(-4,'AppSync')
 print("After adding 'AppSync' before index -4:", aws_service_list)
 # print(aws_service_list) # Check the content of this list.
+print("Note:")
+print("When using a minus index number, a new element will be added before the designated index number")
+print('When using a positive index number, a new element will be added at the designated index number')
 """
 3. Print the list and the length of the list.
 4. Remove two specific services from the list by name or by index.
