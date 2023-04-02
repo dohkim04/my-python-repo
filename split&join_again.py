@@ -35,3 +35,11 @@ if __name__ == '__main__':
 # Comments: made a mistake in deleteing this file from main branch in local repository.
 # had to commit the delete status on the local repository and git push to the main branch on the remote GitHub repository.
 # now I'm creating this pythong file gain on a branch in my local repository and will push it to remote GitHub repository again.
+
+#============================================================
+# changed the python file name as split&join_again.py
+
+# Revo@UwordI:~/environment/my-python-repo (dkim-04022023-split&join-function-rewrite) $ ./split\&join_again.py 
+#Enter your string: This is a testing message
+#Word list: ['This', 'is', 'a', 'testing', 'message']
+# Split and join statement: This-is-a-testing-message
