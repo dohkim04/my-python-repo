@@ -71,7 +71,6 @@ print("Alphabetic Last Word:", sorted_each_word_list[len(sorted_each_word_list)-
 # Title case: This Is A Testing Message
 # Capitalized: This is a testing message
 # Words: ['ThIs', 'iS', 'a', 'tEsTinG', 'mEssAGe']
+# Sorted word list:  ['ThIs', 'a', 'iS', 'mEssAGe', 'tEsTinG']   # ==> Note: an uppercase letter, 'T' has lower code point than any lowercase letters per UTF-8.
 # Alphabetic First Word: ThIs
-# Alphabetic First Word: tEsTinG
-
-# The last keyword should be mEssAGe, NOT tEsTinG. Check index number.
+# Alphabetic Last Word: tEsTinG
