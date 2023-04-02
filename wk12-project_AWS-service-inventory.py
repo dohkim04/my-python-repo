@@ -10,7 +10,7 @@
 print("==========")
 print("1. The list should be empty initially.")
 aws_service_list = []
-print("The initial status of aws_service_list:", aws_service_list)
+print(" # The initial status of aws_service_list:", aws_service_list)
 print("==========\n")
 
 # Output:
@@ -67,8 +67,8 @@ print("==========\n")
 ##########################################################
 #3. Print the list and the length of the list
 print("3. Print the list and the length of the list.")
-print(' - The initial AWS service list:', aws_service_list)
-print(' - The length of the list:', len(aws_service_list))
+print(' # The initial AWS service list:', aws_service_list)
+print(' # The length of the list:', len(aws_service_list))
 print("==========\n")
 
 # Output
@@ -80,9 +80,9 @@ print("==========\n")
 print("4. Remove two specific services from the list by name or by index.")
 
 aws_service_list.remove('Lightsail')
-print("After removing 'Lightsail' from the list:", aws_service_list)
+print(" # After removing 'Lightsail' from the list:", aws_service_list)
 del aws_service_list[6]
-print("After removing an element at index 6 from the list:", aws_service_list)
+print(" # After removing an element at index 6 from the list:", aws_service_list)
 print("==========\n")
 # Output
 '''
@@ -97,27 +97,38 @@ print(' - The updated AWS service list:', aws_service_list)
 print(' - The length of the list:', len(aws_service_list))
 print("==========\n")
 
-"""
-6. Push your code to GitHub and include the link in your LinkedIn write-up.
-"""
+# 6. Push your code to GitHub and include the link in your LinkedIn write-up.
+print("6. Push your code to GitHub and include the link in your LinkedIn write-up.")
+print(" ## NOTE: AWS Cloud9 was used as a local repo.")
+print(" #1. In the Cluod9 terminal, 'git push' the current branch 'week12-mini-project' from the local Cloud9 repo to the remote the GitHub repo")
+print(" #2. In the remote GitHUb repo, make a pull request using the updated 'week12-mini-project' branch") 
+print("       & merge the branch into the main branch present in the remote repo.")
+print(" #3. In the Cloud9 terminal,")
+print("  - 'git pull' the updated main branch from the remote GitHub repo to your local Cloud9 repo")
+print("  - checkout into the main branch in your local Cloud9 repo.")
+print("  - delete the merged 'week12-mini-project' branch in the local repo")
+print("  - delete the remote tracking branch 'origin/week12-mini-project' branch.")
+print("  - To synchronize the above changes made in the terminal to Cloud9 Source Control panel,")
+print("      click two circling arrow icon at the left bottom corner of the Cloud9 window")
+print("  - Based on your local repo situation, you may need to make stage changes and commits appropriately")
+print("  - However, you do not need to 'git push' to your remote GitHub repo, as you do not intend to update it now.")
+print("==========")
+
 
 '''
 Below is a selected list of common AWS services below.
-Compute (EC2, Lightsail, Lambda, EB, Outposts)
-Containers (ECR, ECS, EKS)
-Storage (S3, EFS, FSx, S3 Glacier, Storage Gateway)
-Database (RDS, ElastiCache, DynamoDB, MemoryDB for Redis)
-Migration & Transfer (Snow Family, DataSync)
-Networking & Content Delivery (VPC, CloudFront, Route 53, API Gateway)
-Developer Tools(CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9, X-Ray, AppConfig)
-Management & Governance (Organizations, CloudWatch, Auto Scaling, CloudFormation, Config, Systems Manager, License Manager, Health Dashboard, CloudTrail)
-Analytics (Athena, Redshift, EMR, OpenSearch, Kinesis, QuickSight, DataPipeline, Glue)
-Security, Identity & Compliance (IAM, Cognito, Secrets Manager, GuardDuty, Inspector, Macie, KMS, CloudHSM, WAF, Shield, Private Certificate Authority)
-AWS Cost Management (Cost Explorer, Budgets, Marketplace)
-Front-end Web & Mobile (Amplify, AppSync)
-Application Integration (Step Functions, EventBridge, SNS, SQS, SWF)
-Business Applications (Connect, Chime, SES, Alexa)
+- Compute (EC2, Lightsail, Lambda, EB, Outposts)
+- Containers (ECR, ECS, EKS)
+- Storage (S3, EFS, FSx, S3 Glacier, Storage Gateway)
+- Database (RDS, ElastiCache, DynamoDB, MemoryDB for Redis)
+- Migration & Transfer (Snow Family, DataSync)
+- Networking & Content Delivery (VPC, CloudFront, Route 53, API Gateway)
+- Developer Tools(CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9, X-Ray, AppConfig)
+- Management & Governance (Organizations, CloudWatch, Auto Scaling, CloudFormation, Config, Systems Manager, License Manager, Health Dashboard, CloudTrail)
+- Analytics (Athena, Redshift, EMR, OpenSearch, Kinesis, QuickSight, DataPipeline, Glue)
+- Security, Identity & Compliance (IAM, Cognito, Secrets Manager, GuardDuty, Inspector, Macie, KMS, CloudHSM, WAF, Shield, Private Certificate Authority)
+- AWS Cost Management (Cost Explorer, Budgets, Marketplace)
+- Front-end Web & Mobile (Amplify, AppSync)
+- Application Integration (Step Functions, EventBridge, SNS, SQS, SWF)
+- Business Applications (Connect, Chime, SES, Alexa)
 '''
-
-
-
