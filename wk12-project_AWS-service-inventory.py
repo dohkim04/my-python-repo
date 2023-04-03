@@ -100,23 +100,23 @@ print("==========\n")
 # 6. Push your code to GitHub and include the link in your LinkedIn write-up.
 print("6. Push your code to GitHub and include the link in your LinkedIn write-up.")
 print(" ## NOTE: AWS Cloud9 was used as a local repo.")
-print(" #1. In the Cluod9 terminal, 'git push' the current branch 'week12-mini-project' from the local Cloud9 repo to the remote the GitHub repo")
-print(" #2. In the remote GitHUb repo, make a pull request using the updated 'week12-mini-project' branch") 
+print(" #1. In the Cluod9 terminal, 'git push' the current branch 'week12-mini-project' from the local Cloud9 repo to the remote GitHub repo.")
+print(" #2. In the remote GitHUb repo, make a pull request using the updated 'week12-mini-project' branch.") 
 print("       & merge the branch into the main branch present in the remote repo.")
 print(" #3. In the Cloud9 terminal,")
-print("  - 'git pull' the updated main branch from the remote GitHub repo to your local Cloud9 repo")
+print("  - 'git pull' the updated main branch from the remote GitHub repo to your local Cloud9 repo.")
 print("  - checkout into the main branch in your local Cloud9 repo.")
 print("  - delete the merged 'week12-mini-project' branch in the local repo")
 print("  - delete the remote tracking branch 'origin/week12-mini-project' branch.")
 print("  - To synchronize the above changes made in the terminal to Cloud9 Source Control panel,")
-print("      click two circling arrow icon at the left bottom corner of the Cloud9 window")
-print("  - Based on your local repo situation, you may need to make stage changes and commits appropriately")
+print("      click two circling arrow icon at the left bottom corner of the Cloud9 window.")
+print("  - Based on your local repo situation, you may need to make stage changes and commits appropriately.")
 print("  - However, you do not need to 'git push' to your remote GitHub repo, as you do not intend to update it now.")
 print("==========")
 
 
 '''
-Below is a selected list of common AWS services below.
+Below is a selected list of common AWS services.
 - Compute (EC2, Lightsail, Lambda, EB, Outposts)
 - Containers (ECR, ECS, EKS)
 - Storage (S3, EFS, FSx, S3 Glacier, Storage Gateway)
