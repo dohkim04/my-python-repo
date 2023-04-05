@@ -17,6 +17,8 @@ for number in range(1, user_input+1): # the last number is not included in range
     else:
         print(number)
     
+# final revision: made this file executable in linux command prompt
+    
 '''
 Checkpoint 1. Checking for looping through each number within the provided range - valid!.
 
@@ -30,7 +32,7 @@ Enter an integer number: 7
 7
 
 Checkpoint 2. Test whether this function is properly working or not.
-Enter an integer number: 15
+Enter an integer number: 31
 1
 2
 Fizz
@@ -46,4 +48,19 @@ Fizz
 13
 14
 FizzBuzz
-'''
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+FizzBuzz
+31
