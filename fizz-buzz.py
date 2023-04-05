@@ -8,14 +8,15 @@ for number in range(1, user_input+1): # the last number is not included in range
     print(number)
     
 # print FizzBuzz if the value is a multiple of 3 and 5
-elif number % 3 == 0 and number % 5 == 0:
-    print("FizzBuzz")
+    if (number % 3 == 0) and (number % 5 == 0):
+        print("FizzBuzz")
 # print Fizz if the value is a multiple of 3
-elif number % 3 == 0:
-    print("Fizz")
+    elif number % 3 == 0:
+        print("Fizz")
 # print Buzz if the value is a multiple of 5
-elif number % 5 == 0:
-    print("Buzz")
+    elif number % 5 == 0:
+        print("Buzz")
 # print the number as it is if nothing above applies.
-else:
-    print(number)
+    else:
+        print(number)
+    
