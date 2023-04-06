@@ -3,22 +3,46 @@
 def char_range(start, stop, step=1):
     initial_code = ord(start) # convert to int
     last_code = ord(stop)     # convert to int
-    for number in range(initial_code, last_code + 1, step):
+
+    stop_modifier = 1
+
+    # For Error #3 dealing with reversed unicode: multiply by -1 for step value
+    if initial_code > last_code:
+        step *= -1
+        stop_modifier *= -1
+
+
+    for number in range(initial_code, last_code + stop_modifier, step):
         yield chr(number) # convert int to chr
     # yield start
 
 '''
 Error Message #1
-Traceback (most recent call last):
+Traceback (most recent call last): create for loop
     assert list(char_range("a", "e")) == [
 AssertionError: Expected ['a', 'b', 'c', 'd', 'e'] but got ['e']
 '''
 '''
-Error Message #2: last code is not included. Change range
+Error Message #2: last code is not included: add 1 for last_code
     assert list(char_range("a", "e")) == [
 AssertionError: Expected ['a', 'b', 'c', 'd', 'e'] but got ['a', 'b', 'c', 'd']
 '''
 
+'''
+Error Message #3: deal with reversed code : let's multiply by -1
+    assert list(char_range("e", "a")) == [
+AssertionError: Expected ['e', 'd', 'c', 'b', 'a'] but got []
+'''
+
+'''
+Error Message #4: multiply by -1 for stop modifier and step for reversed unicode, accordingly.
+    assert list(char_range("e", "a")) == [
+AssertionError: Expected ['e', 'd', 'c', 'b', 'a'] but got ['e', 'd', 'c']
+'''
+
+'''
+No errors detected.
+'''
 # Tests to verify the implementation of char_range
 # *Do not modify
 ##################################################
