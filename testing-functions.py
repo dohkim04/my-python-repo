@@ -1,4 +1,5 @@
 # Date: 04/06/2023 
+# Title: Defining and Using Pythong Functions
 # 1) Write a `split_name` function that takes a string and returns a dictionary with first_name and last_name
 ''' 1st Error message:
 
@@ -82,7 +83,6 @@ Traceback (most recent call last):
 TypeError: 'int' object is not subscriptable
 '''
 # Solution to 4th Error Message:
-
 def is_palindrome(input_number):
     input_string = str(input_number) # typecast integer value to string value 
     reversed_string = input_string[::-1]
@@ -96,6 +96,11 @@ assert is_palindrome(101) == True, f"Expected True but got {is_palindrome(101)}"
 assert is_palindrome(10) == False, f"Expected False but got {is_palindrome(10)}"
 
 # 5) Write a `build_list` function that takes an item and a number to include in a list
+def build_list(string_value, number_default=1):
+    create_list = []
+    for _ in range(number_default):
+        create_list.append(string_value)
+    return create_list
 
 assert build_list("Apple", 3) == [
     "Apple",
@@ -105,3 +110,9 @@ assert build_list("Apple", 3) == [
 assert build_list("Orange") == [
     "Orange"
 ], f"Expected ['Orange'] but received {repr(build_list('Orange'))}"
+
+'''
+Checked the error code shown below:   
+~/my-python-repo$ echo $?
+0
+'''
