@@ -11,8 +11,9 @@ print(var2)
 
 var3 = [251, 386, 493, '009']
 print(var3)
-var3.append(649)
-print(var3)
+var3.append(649) 
+# append is an inplace function: directly update the vales of the var3 list.
+print(var3) 
 print(dir(var3))
 
 numbers = [1,2,3,4,5]
