@@ -49,4 +49,39 @@ for i in range(0,10):
     print(i)
 
 
+print("\nBlank line intentionally\n")
+print("Redefine the var3 list with new elements below.")
+var3 = [721, 649, '009', 493, 386, 251]
+print(f"{var3}")
+print(f"The element at index 1 in the var3 list has a number {var3[1]}")
+print(f"There are {len(var3)} elements in the var3 list")
+for i in range(len(var3)):
+    print(var3[i])
+
+# list comprehension
+print("'\nList Comprehension\n")
+import random
+print("This is 5 x 5 matrix:")
+list_of_lists = [[random.randint(0,10) for j in range(5)] for i in range(5)]
+print(list_of_lists)
+print("This is 3 x 5 matrix:")
+list_of_lists = [[random.randint(0,10) for j in range(5)] for i in range(3)]
+print(list_of_lists)
+
+# using for loop with list_of_lists
+print("\nLet's use for loop with the list of lists")
+for l in list_of_lists:
+    print(l) # print each row
+    for element in l:
+        print(element) # print individual elements per each row
+
+print("\nLet's express the above statements using for loop\n")
+for i in range(len(list_of_lists)):
+    print(list_of_lists[i])
+    for j in range(len(list_of_lists[i])):
+        print(list_of_lists[i][j])
+
+# Dictionary examples
+print("\nLet's review on Dictionary data types!\n")
+
 
