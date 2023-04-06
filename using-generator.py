@@ -3,17 +3,22 @@
 def char_range(start, stop, step=1):
     initial_code = ord(start) # convert to int
     last_code = ord(stop)     # convert to int
-    for number in range(initial_code, last_code, step):
+    for number in range(initial_code, last_code + 1, step):
         yield chr(number) # convert int to chr
     # yield start
 
 '''
 Error Message #1
 Traceback (most recent call last):
-  File "/home/dohyungkim2023/my-python-repo/using-generator.py", line 18, in <module>
     assert list(char_range("a", "e")) == [
 AssertionError: Expected ['a', 'b', 'c', 'd', 'e'] but got ['e']
 '''
+'''
+Error Message #2: last code is not included. Change range
+    assert list(char_range("a", "e")) == [
+AssertionError: Expected ['a', 'b', 'c', 'd', 'e'] but got ['a', 'b', 'c', 'd']
+'''
+
 # Tests to verify the implementation of char_range
 # *Do not modify
 ##################################################
