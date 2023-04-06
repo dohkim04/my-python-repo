@@ -59,7 +59,7 @@ for i in range(len(var3)):
     print(var3[i])
 
 # list comprehension
-print("'\nList Comprehension\n")
+print("\n###########\nList Comprehension\n")
 import random
 print("This is 5 x 5 matrix:")
 list_of_lists = [[random.randint(0,10) for j in range(5)] for i in range(5)]
@@ -82,6 +82,22 @@ for i in range(len(list_of_lists)):
         print(list_of_lists[i][j])
 
 # Dictionary examples
-print("\nLet's review on Dictionary data types!\n")
+print("\n##############\nLet's review on Dictionary data types!\n")
+
+var={}
+print(var)
+print(type(var))
+
+print("Let's define var2 dictionary")
+var2 = {"number": 386}
+print(var2)
+print("let's add a new key-value pair in the dictionary")
+var2["fruit"] = "apple"
+print(var2)
+print("let's update a value associated with a key value")
+var2["number"] = 493 
+print(var2)
+print(dir(var2))
+
 
 
