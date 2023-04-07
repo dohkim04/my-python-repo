@@ -15,7 +15,8 @@ current_directory = os.getcwd()
 
 # print(current_directory)
 entries = os.path(current_directory)
-print(entries)
+for entry in entries:
+    print(entry.is_file)
 
         
     
