@@ -47,8 +47,6 @@ def set_x(aaa):
     global abcd # explicitly define global abcd variable within this function
     abcd = xxx + 70 # add 30 to abc value and assign to abcd variable
     
-    # simply pass the value of global abc value to new local value within this function
-
     global abc # this abc is the abc defined in outer scope (See the statement above: abc=40)
     abc = abc + 70 # the value of global abc variable is updated within this function, inner scope.
 
