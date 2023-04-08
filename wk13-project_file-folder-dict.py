@@ -9,18 +9,35 @@
 ##########################################
 
 #!/usr/bin/env python3.7
+# define a Python library for operating system, 'os'
 import os
 
+# Basic Python code review on how to retrieve file and directory 
+current_directory = os.getcwd() # get current directory pathway as string value.
+dir_name = os.path.dirname(current_directory) # (current_directory)
+base_name = os.path.basename(current_directory)
+print (dir_name, base_name)
+
+
 current_directory = os.getcwd()
+print(type(current_directory))          # <class 'str'>
+print(type(os.walk(current_directory))) # <class 'generator'>
 
-# print(current_directory)
-entries = os.path(current_directory)
-for entry in entries:
-    print(entry.is_file)
 
-        
-    
 
+def get_dir_file(current_directory):
+    dir_info= os.walk(current_directory)
+    for root, sub_dir_names, file_names in dir_info: # walk() method generates the file names in a directory tree by walking the tree either top-down or bottom-up.
+        for sub_dir_name in sub_dir_names:
+            for each_file in file_names:
+                if os.path.isfile(each_file) == True:
+                    print(f"{os.path.isfile(each_file)}, 'path' : {root}, {sub_dir_name}, {each_file}, 'size' : {os.path.getsize(each_file)}")
+
+
+get_dir_file(current_directory)
+
+
+'''
 ##########################################
 # ADVANCED
 # Modify the script into a function such that any path can be passed as a parameter. 
@@ -31,3 +48,4 @@ for entry in entries:
 # COMPLEX (Very Tricky)
 # Modify the function to display recursive file information as dictionary of dictionaries.
 
+'''
