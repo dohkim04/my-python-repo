@@ -17,7 +17,6 @@ It will be used to create a new script genearating a list of dictionary.
 # The function should then create the list of dictionaries about files from that path. 
 # The function should also return information on files nested in folders (recursive).
 ##########################################
-
 ##########################################
 # 0. Preparation: reviewed basic Python codes on how to retrieve the information on file and directories
 # 
@@ -26,12 +25,13 @@ It will be used to create a new script genearating a list of dictionary.
 # walk() method: generate the file names in a directory tree by walking the tree either top-down or bottom-up. the default is top-down.
 # print(type(os.walk(os.getcwd() ))) # <class 'generator'>
 
-
 ##########################################
 #!/usr/bin/env python3.10
 #1. define a Python library for miscellaneous operating system interfaces
 import os
 
+file_list = []
+file_dict = {}
 #2. define a method to retrieve file and directory pathway per a given current directory
 # Method [1]: get_dir_file() function 
 # Per a user's file pathway input, generate the file names in a directory tree by walking the tree from top to bottom.
@@ -45,10 +45,15 @@ def look_through_directory(dir_info): # dir_tree_info argument will be passed on
         # print(f"The scanning directory is {root}{'/'}{sub_dir_names}.")
         if len(sub_dir_names) !=0: 
             for sub_dir_name in sub_dir_names:
-                print("We are now in a sub-directory:",os.path.join(root,sub_dir_name))
+                # print("We are now in a sub-directory:",os.path.join(root,sub_dir_name))
+                # os.path.join(root,sub_dir_name))
                 for each_file in file_names:
                     if os.path.isfile(each_file) == True:
                         print(f"{os.path.isfile(each_file)}, 'path' : {root}, {sub_dir_name}, {each_file}, 'size' : {os.path.getsize(each_file)}")
+                        file_path = os.path.join(root,each_file)
+                        file_size = os.path.getsize(each_file)
+                        file_dict[file_path] = file_size
+                        file_list.append({''})
 
 ###########################
 #3. Ask user to enter a specific directory pathway to start with.
