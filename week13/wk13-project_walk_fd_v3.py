@@ -35,7 +35,7 @@ def get_tree_directory(dir=os.getcwd()):
         #       file_list.append(each_item)                 
         #       print(each_item, sep="\n")
 
-    return file_list # the entire file list will be returned  
+    return file_list # the file_list list will be returned  
 
 
 #####################################################################
@@ -65,25 +65,30 @@ def search_file(dir = '/home/dohyungkim2023/my-python-repo'):
     print(complete_file_list)
     
 
-######## The following codes test search_file method ##############
+##### The following codes test search_file method #####
+##### Test 1 #####
 print('Case 1: No parameter is given: executed "search_file()"')
+print("Please find a list of dictionaries\nAll the files and all the sub directories are reported: ")
+
 search_file() # no parameter is given
 print("This is the end of 1st task")
 
-# Reintialization 
+
+###### Reintialization #####
 complete_file_list=[]
 file_list=[]
 
+##### Test 2 #####
 print('Case 2: a directory path is given: executed "seaerch_file("/home/dohyungkim2023/my-python-repo/week13")"')
+print("Please find a list of dictionaries\nAll the files and all the sub directories are reported: ")
+
 search_file("/home/dohyungkim2023/my-python-repo/week13") # parameter is given
 print("This is the end of 2nd task")
 
 # Reintialization 
-complete_file_list=[]
-file_list=[]
+# complete_file_list=[]
+# file_list=[]
 
-print('Case 3: a directory path is given: executed "seaerch_file("/home/dohyungkim2023/my-python-repo/.git")"')
-search_file("/home/dohyungkim2023/my-python-repo/.git") # parameter is given
-print("This is the end of 3nd task")
+
 
 
