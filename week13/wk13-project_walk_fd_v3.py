@@ -1,5 +1,22 @@
+# Date: 04/09/2023
+# Name: Do Hyung Kim
+
+# Title: create a script generating a list of dictionaries about files
+# This script file meet both requirements below:
+
+# FOUNDATIONAL‌ REQUIREMENT 
+# Create a script to that generates a list of dictionaries about files in the working directory. 
+# Then print the list. Push your code to GitHub and include the link in your write up.
+
+# ADVANCED REQUIREMENT
+# Modify the script into a function such that any path can be passed as a parameter. 
+# This parameter should be optional and should default to working directory when the variable is not passed. 
+# The function should then create the list of dictionaries about files from that path. 
+# The function should also return information on files nested in folders (recursive).
+
+#########################################################################################################
 #!/usr/bin/env python3.10
-import os # import os library to access to directory and file in operating system
+import os # access to directories and files in operating system
 
 # Initialization: Create an empty list and an empty dictionary.
 file_list=[]
@@ -40,15 +57,15 @@ def get_tree_directory(dir=os.getcwd()):
 
 #####################################################################
 # Method 2: get_file_list method
-# -- It create a list of files under a directory the directory and the size of each file per directory.
-# -- This method will be called recursively per eah sub directory by get_tree_directory method.
+# -- It create a list of files including the pathway and the size of each file per (sub) directory
+# -- This method will be called recursively by get_tree_directory method.
 #####################################################################
 def get_file_list(root, file_names, each_sub_dir):
     print("\n##############################################################")
     print(f'##### This is the directory of "{os.path.join(root,each_sub_dir)}"')
     for each_file in file_names:
         each_item = {'path' : os.path.join(root, each_sub_dir, each_file), 'size' : os.path.getsize(os.path.join(root,each_file))}
-        file_list.append(each_item)
+        file_list.append(each_item) 
         print(each_item, sep="\n") # print each file item per line on computer screen.
 
     return file_list   ##### return the created file_list per each sub-directory. 
@@ -56,20 +73,21 @@ def get_file_list(root, file_names, each_sub_dir):
 
 #####################################################################
 # Method 3: search_file method
-# -- This method passes the entry of user's directory pathway to get_tree_directory method.
-# -- It also set up current working directory by default if no user arugmnet is entered. 
+# -- This method passes the entry of user's directory pathway onto the get_tree_directory method.
+# -- It set up your current working directory as default working directory if no arugmnet is provided. 
 #####################################################################
 #### search_file method (This is the function that set up a default directory path for no argument).
 def search_file(dir = os.getcwd()): # if nothing is entered, use this default pathway.
     complete_file_list = get_tree_directory(dir)
     #print(complete_file_list) ##### this code is for testing purpose only
-    return complete_file_list  ##### return a final version of a list of dictionary
+    return complete_file_list  ##### return a final version of a file list of dictionaries
     
     
 #####################################################################
 # Method 4: file_folder_dictionary method
-# Receive user's arguments from command line.
-# When user's arguments is not acceptable, show a warning message and stop the program.
+# Determine whether received arguments are acceptable.
+# Show a warning message and stop the program if the arguments are not acceptable
+# Pass the arguments onto search_file method to initiate the creation of a file list of dictionaries 
 #####################################################################
 import sys # import system library to accept argument as input through user's command line
 
@@ -109,14 +127,20 @@ def file_folder_dictionary(argv): # receive a directory pathway as an argument
 
 
 #######################################################
-##### Main function
-##### This script will start to execute from this point
-if __name__ == "__main__": # 
-    result=file_folder_dictionary(sys.argv) # receive an argument from command line
-    ## (example) 
+##### Method 5: Main method
+##### The exeucution of this Python script will start from and end at this method
+##### Receive arguments from command line and pass them onto file_folder_dictionary method for processing
+#######################################################
+if __name__ == "__main__": 
+    # receive an argument and pass it onto file_folder_dictionary method
+    ## an examplary command line with an argument below: 
     ## ./wk13-project_walk_fd_v3.py /home/dohyungkim2023/my-python-repo
+    # the outcome of the script will be saved into result variable in the format of a list of dictionaries format.
+    result=file_folder_dictionary(sys.argv) 
+
+    ## Print the list of dictionaries appropriately based on the status of the result.
     if result == []:
-        print("You have entered an invalid directory pathway. Try again!")
+        print("No result found due to an invalid directory pathway. Try again.")
         sys.exit(2)
     else:
         print("\n\n################################################\n")
