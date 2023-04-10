@@ -1,30 +1,31 @@
 #!/usr/bin/env python3.10
 import os,sys # access to directories and files in operating system
-
-# Date: 04/09/2023
-# Name: Do Hyung Kim
-
-# Title: create a script generating a list of dictionaries about files
-# This script file meet both requirements below: This is the ver 4. program
-
+#############################################################################
+# Date: 04/09/2023                                                          #
+# Name: Do Hyung Kim                                                        #
+#############################################################################
+# Title: create a script generating a list of dictionaries about files      #
+# This script file meet both requirements below: This is the ver 4. program #
+##############################################################################################################
 # FOUNDATIONAL‌ REQUIREMENT 
 # Create a script to that generates a list of dictionaries about files in the working directory. 
 # Then print the list. Push your code to GitHub and include the link in your write up.
-
+#
 # ADVANCED REQUIREMENT
 # Modify the script into a function such that any path can be passed as a parameter. 
 # This parameter should be optional and should default to working directory when the variable is not passed. 
 # The function should then create the list of dictionaries about files from that path. 
 # The function should also return information on files nested in folders (recursive).
+#
+##############################################################################################################
 
-#########################################################################################################
 # Initialization: Create an empty list and an empty dictionary.
 file_list=[]
 dict_of_list={}
 
 #####################################################################
 # Method 1: get_tree_directory
-# This method traverse a directory tree and call get_file_list method
+# -- This method traverse a directory tree and call get_file_list method
 #####################################################################
 def get_tree_directory(dir=os.getcwd()):
     for root, sub_dir_names, file_names in os.walk(dir):
@@ -64,9 +65,9 @@ def search_file(dir = os.getcwd()): # if nothing is entered, use this default pa
     
 #####################################################################
 # Method 4: file_folder_dictionary method
-# Determine whether received arguments are acceptable.
-# Show a warning message and stop the program if the arguments are not acceptable
-# Pass the arguments onto search_file method to initiate the creation of a file list of dictionaries 
+# -- Determine whether received arguments are acceptable.
+# -- Show a warning message and stop the program if the arguments are not acceptable
+# -- Pass the arguments onto search_file method to initiate the creation of a file list of dictionaries 
 #####################################################################
 # import sys # import system library to accept argument as input through user's command line
 
@@ -106,9 +107,9 @@ def file_folder_dictionary(argv): # receive a directory pathway as an argument
 
 
 #######################################################
-##### Method 5: Main method
-##### The exeucution of this Python script will start from and end at this method
-##### Receive arguments from command line and pass them onto file_folder_dictionary method for processing
+# Method 5: Main method
+# -- The exeucution of this Python script will start from and end at this method
+# -- Receive arguments from command line and pass them onto file_folder_dictionary method for processing
 #######################################################
 if __name__ == "__main__": 
     # receive an argument and pass it onto file_folder_dictionary method
@@ -129,9 +130,8 @@ if __name__ == "__main__":
 
 
 ##########################################################################################
-##########################################################################################
-##### The following codes were used for testing purpose for search_file() function #####
-##### Test 1 #####
+# Note:  The following codes were used for testing purpose for search_file() function #####
+# == Test 1 ==
 #print('Case 1: No parameter is given: executed "search_file()"')
 #print("Please find a list of dictionaries\nAll the files and all the sub directories are reported: ")
 
@@ -143,7 +143,7 @@ if __name__ == "__main__":
 #complete_file_list=[]
 #file_list=[]
 
-##### Test 2 #####
+# == Test 2 ==
 #print('Case 2: a directory path is given: executed "seaerch_file("/home/dohyungkim2023/my-python-repo/week13")"')
 #print("Please find a list of dictionaries\nAll the files and all the sub directories are reported: ")
 
@@ -156,7 +156,7 @@ if __name__ == "__main__":
 
 
 
-
+#################################################################
 ##### Output - print and create a file list of dictionaries #####
 '''
 [Case 1] Execute the script with no argument
