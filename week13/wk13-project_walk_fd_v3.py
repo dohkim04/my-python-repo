@@ -1,3 +1,6 @@
+#!/usr/bin/env python3.10
+import os # access to directories and files in operating system
+
 # Date: 04/09/2023
 # Name: Do Hyung Kim
 
@@ -15,9 +18,6 @@
 # The function should also return information on files nested in folders (recursive).
 
 #########################################################################################################
-#!/usr/bin/env python3.10
-import os # access to directories and files in operating system
-
 # Initialization: Create an empty list and an empty dictionary.
 file_list=[]
 dict_of_list={}
