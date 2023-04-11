@@ -32,6 +32,7 @@ def get_tree_directory(dir=os.getcwd()):
         #Below is the code for testing purpose - list all sub directories and file names.  
         #print (f"{root},\n{sub_dir_names}, {file_names}") 
         get_file_list(root, file_names) # create a list of the path and the size of all the files under the current directory.
+    #print(type(file_list))
     return file_list # the file_list list will be returned  
 
 
