@@ -990,46 +990,27 @@ See the final version of a dict of dict below:
 
 ################################################
 
-See the final version of a lits of dictionary below:
+See the final version of a dict of dict below:
 
 
- [{'path': 'week13/wk13-os-functions.py', 'size': 32143}, {'path': 'week13/wk13-project_walk_fd_v1.py', 'size': 16183}, {'path': 'week13/wk13-project_walk_fd_v3.py', 'size': 89740}, {'path': 'week13/wk13-project_walk_fd_v4_list_of_dict.py', 'size': 69017}, {'path': 'week13/wk13-project_walk_fd_v5_dict_of_dict.py', 'size': 56290}, {'path': 'week13/wk13-project_file_dict_1st_draft.py', 'size': 3745}, {'path': 'week13/wk13-project_walk_fd_v2.py', 'size': 68164}, {'path': 'week13/output.txt', 'size': 487529}]
+ {'week13/': {'file: wk13-os-functions.py': 'size: 32143', 'file: wk13-project_walk_fd_v1.py': 'size: 16183', 'file: wk13-project_walk_fd_v3.py': 'size: 89740', 'file: wk13-project_walk_fd_v4_list_of_dict.py': 'size: 69017', 'file: wk13-project_walk_fd_v5_dict_of_dict.py': 'size: 81281', 'file: wk13-project_file_dict_1st_draft.py': 'size: 3745', 'file: wk13-project_walk_fd_v2.py': 'size: 68164', 'file: output.txt': 'size: 487529'}}
 
+
+
+ Convert the above output into the following JSON format 
+ using JSON Formatter and Validator: https://jsonformatter.curiousconcept.com/#
  
- Convering the above output into the JSON format below:
-
- [
-   {
-      "path":"week13/wk13-os-functions.py",
-      "size":32143
-   },
-   {
-      "path":"week13/wk13-project_walk_fd_v1.py",
-      "size":16183
-   },
-   {
-      "path":"week13/wk13-project_walk_fd_v3.py",
-      "size":89740
-   },
-   {
-      "path":"week13/wk13-project_walk_fd_v4_list_of_dict.py",
-      "size":69017
-   },
-   {
-      "path":"week13/wk13-project_walk_fd_v5_dict_of_dict.py",
-      "size":56290
-   },
-   {
-      "path":"week13/wk13-project_file_dict_1st_draft.py",
-      "size":3745
-   },
-   {
-      "path":"week13/wk13-project_walk_fd_v2.py",
-      "size":68164
-   },
-   {
-      "path":"week13/output.txt",
-      "size":487529
+ {
+   "week13/":{
+      "file: wk13-os-functions.py":"size: 32143",
+      "file: wk13-project_walk_fd_v1.py":"size: 16183",
+      "file: wk13-project_walk_fd_v3.py":"size: 89740",
+      "file: wk13-project_walk_fd_v4_list_of_dict.py":"size: 69017",
+      "file: wk13-project_walk_fd_v5_dict_of_dict.py":"size: 81281",
+      "file: wk13-project_file_dict_1st_draft.py":"size: 3745",
+      "file: wk13-project_walk_fd_v2.py":"size: 68164",
+      "file: output.txt":"size: 487529"
    }
-]
+}
+
  '''
