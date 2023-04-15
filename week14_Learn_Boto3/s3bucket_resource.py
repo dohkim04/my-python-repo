@@ -1,5 +1,5 @@
 """
-Your module description
+List up your s3 buckets
 """
 import boto3
 s3_resource=boto3.resource('s3')
@@ -8,9 +8,9 @@ for bucket in s3_resource.buckets.all():
     #print(bucket) # Output ==> s3.Bucket(name='luit-gold-do-testmb')  s3.Bucket(name='mybucket04142023-v1') s3.Bucket(name='mybucket04142023-v2')
     print(bucket.name) 
 
-bucket_list = list(s3_resource.buckets.all())
-print(f"This is a list of buckets: {bucket_list}")
-print(f"The size of a list of buckets: {len(bucket_list)}")
+#bucket_list = list(s3_resource.buckets.all())
+#print(f"This is a list of buckets: {bucket_list}")
+#print(f"The size of a list of buckets: {len(bucket_list)}")
 '''Output:
 
 luit-gold-do-testmb
