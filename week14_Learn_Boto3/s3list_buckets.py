@@ -28,4 +28,7 @@ print(response['Buckets'])
 
 
 [{'Name': 'luit-gold-do-testmb', 'CreationDate': datetime.datetime(2023, 2, 10, 0, 59, 22, tzinfo=tzlocal())}, {'Name': 'mybucket04142023-v1', 'CreationDate': datetime.datetime(2023, 4, 15, 3, 0, 17, tzinfo=tzlocal())}]
-'''
+
+[Case 3] - after creating one more bucket in us-east-2 again
+ [{'Name': 'luit-gold-do-testmb', 'CreationDate': datetime.datetime(2023, 2, 10, 0, 59, 22, tzinfo=tzlocal())}, {'Name': 'mybucket04142023-v1', 'CreationDate': datetime.datetime(2023, 4, 15, 3, 0, 17, tzinfo=tzlocal())}, {'Name': 'mybucket04142023-v2', 'CreationDate': datetime.datetime(2023, 4, 15, 3, 13, 37, tzinfo=tzlocal())}]
+  '''
