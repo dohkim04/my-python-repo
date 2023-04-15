@@ -1,5 +1,5 @@
 """
-Your module description
+list_buckets() method
 """
 import boto3
 #s3=boto3.resource('s3')

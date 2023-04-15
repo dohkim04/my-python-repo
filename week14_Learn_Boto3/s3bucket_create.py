@@ -9,9 +9,8 @@ create_response = s3.create_bucket(
     ACL='private',                  # Previously, 'public-read' is chosen for 'mybucket04142023-v1' bucket 
     Bucket = 'mybucket04142023-v2', # Previously, Bucket name as 'mybucket04142023-v1' 
     CreateBucketConfiguration={'LocationConstraint': 'us-east-2'},) # Note: us-east-1 was not listed so us-east-2 was chosen instead.
-print(create_response)
-#print(len(response))
-print("\nNext, let\'s list up current bucket list below")
+#print(create_response)
+#print("\nNext, let\'s list up current bucket list below")
 
 list_response = s3.list_buckets()
 buckets = list_response['Buckets']
