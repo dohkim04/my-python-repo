@@ -121,7 +121,7 @@ dynamodb.Table(name='MyMovieList')
 
 """
 
-#####
+#########################################################
 #'''
 # [Step 5] Scan the DynamoDB table
     # KeySchema = [{'AttributeName': 'rank_id', 'KeyType': 'HASH'},{'AttributeName': 'genre'  ,'KeyType': 'RANGE'},],
@@ -180,3 +180,33 @@ a list of items on MyMovieList DynamoDB table is:
  {'rank_id': {'N': '57'}, 'year': {'N': '1976'}, 'genre': {'S': 'Drama'}, 'title': {'S': 'Rocky'}},
  {'rank_id': {'N': '74'}, 'year': {'N': '1991'}, 'genre': {'S': 'Drama'}, 'title': {'S': 'The Silence of the Lambs'}}],
 """
+
+###############
+
+"""
+##### Retrieve individual dictionaries representing each movie item using Scan method ####
+import boto3
+from boto3.dynamodb.conditions import Key, Attr
+dynamodb = boto3.resource('dynamodb', region_name='us-east-1') 
+# boto3.client('dynamodb', region_name='us-east-1') causes AttributeError: 'DynamoDB' object has no attribute 'Table'
+table = dynamodb.Table('MyMovieList') # retrieve table object of MyMovieList DynamoDB table.
+
+## Retrieve each dictionary per each movie from the DynamoDB table.
+response = table.scan()   # Receive an entire table data as response object for scanning. 
+items = response['Items'] # Retrieve a single "items" list that corresponds to "Item" Key in the response.
+for each_item in items:   # Iterate each dictionary present within the list per loop.
+    print(each_item)      # print each_item, a dictionary per each movie item.
+"""
+'''Output below:
+dohyungkim2023@DESKTOP-82B8HN7:~/my-python-repo/week14PR_GrpB_dynamodb$ python3 wk14PR_dynamodb.py
+{'rank_id': Decimal('8'), 'year': Decimal('1993'), 'genre': 'Drama', 'title': " Schindler's List"}
+{'rank_id': Decimal('10'), 'year': Decimal('1939'), 'genre': 'Musical', 'title': ' The Wizard of Oz'}
+{'rank_id': Decimal('2'), 'year': Decimal('1972'), 'genre': 'Drama', 'title': 'The God Father'}
+{'rank_id': Decimal('40'), 'year': Decimal('1965'), 'genre': 'Musical', 'title': 'The Sound of Music'}
+{'rank_id': Decimal('100'), 'year': Decimal('1959'), 'genre': 'Epic', 'title': 'Ben-Hur'}
+{'rank_id': Decimal('41'), 'year': Decimal('1933'), 'genre': 'Adventure', 'title': 'King Kong'}
+{'rank_id': Decimal('6'), 'year': Decimal('1939'), 'genre': 'Romance', 'title': 'Gone with the Wind'}
+{'rank_id': Decimal('15'), 'year': Decimal('1977'), 'genre': 'Adventure', 'title': 'Star Wars'}
+{'rank_id': Decimal('57'), 'year': Decimal('1976'), 'genre': 'Drama', 'title': 'Rocky'}
+{'rank_id': Decimal('74'), 'year': Decimal('1991'), 'genre': 'Drama', 'title': 'The Silence of the Lambs'}
+'''
