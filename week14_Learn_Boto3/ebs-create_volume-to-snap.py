@@ -10,7 +10,7 @@ snapshot = ec2.create_snapshot(
 print(snapshot)
 '''
 {'Description': 'create a snapshot from a pre-existing EBS volume for cloud9 EC2 instance',
- 'Encrypted': False, 'OwnerId': '527779394887', 'Progress': '', 'SnapshotId': 'snap-05361e2be38c77368', 
+ 'Encrypted': False, 'OwnerId': 'xxxxxxx', 'Progress': '', 'SnapshotId': 'snap-05361e2be38c77368', 
  'StartTime': datetime.datetime(2023, 4, 17, 2, 48, 45, 580000, tzinfo=tzutc()), 
  'State': 'pending', 'VolumeId': 'vol-0c33b9f56a1fd06f7', 'VolumeSize': 10, 'Tags': [], 
  'ResponseMetadata': {'RequestId': '783c20b4-0ee5-4588-8458-52cf78dd95c6', 
