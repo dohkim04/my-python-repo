@@ -279,7 +279,7 @@ print(response)
 dynamodb.Table(name='MyMovieList')
 {'TableDescription': {'TableName': 'MyMovieList', 'TableStatus': 'DELETING', 
  'ProvisionedThroughput': {'NumberOfDecreasesToday': 0, 'ReadCapacityUnits': 5, 'WriteCapacityUnits': 5}, 
- 'TableSizeBytes': 0, 'ItemCount': 0, 'TableArn': 'arn:aws:dynamodb:us-east-1:527779394887:table/MyMovieList', 
+ 'TableSizeBytes': 0, 'ItemCount': 0, 'TableArn': 'arn:aws:dynamodb:us-east-1:xxxxxxxxxxxxxxxxx:table/MyMovieList', 
  'TableId': '6dd9cdf9-3278-4654-ba18-02d2588ff1a7', 'DeletionProtectionEnabled': False}, 
  'ResponseMetadata': {'RequestId': 'E7EJOVKI7O1PTM5H10I4VIOGDBVV4KQNSO5AEMVJF66Q9ASUAAJG', 'HTTPStatusCode': 200, 
     'HTTPHeaders': {'server': 'Server', 'date': 'Wed, 19 Apr 2023 03:37:49 GMT', 
