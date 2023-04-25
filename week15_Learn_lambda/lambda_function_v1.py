@@ -31,7 +31,7 @@ def lambda_handler(event, context):
         ec2response = ec2client.stop_instances(InstanceIds=[ec2_instance_id,],)
         print(ec2response)
         snsresponse = snsclient.publish(
-        TopicArn='arn:aws:sns:us-east-1:527779394887:Warning_about_your_EC2',
+        TopicArn='arn:aws:sns:us-east-1:xxxxxxxxxx:Warning_about_your_EC2',
         Message='Warning! Your EC2 stopped. You are not authorized to run the instances. Contact IT department.',
         Subject='doh.kim04@gmail.com',
 )
