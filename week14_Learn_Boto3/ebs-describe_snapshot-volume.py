@@ -11,12 +11,12 @@ print(response) #
 '''
 
 {'Snapshots': [{'Description': 'create a snapshot from a pre-existing EBS volume for cloud9 EC2 instance', 
-                'Encrypted': False, 'OwnerId': '527779394887', 'Progress': '100%', 'SnapshotId': 'snap-05361e2be38c77368', 
+                'Encrypted': False, 'OwnerId': 'xxxxxx', 'Progress': '100%', 'SnapshotId': 'snap-05361e2be38c77368', 
                 'StartTime': datetime.datetime(2023, 4, 17, 2, 48, 45, 580000, tzinfo=tzutc()), 'State': 'completed', 
                 'VolumeId': 'vol-0c33b9f56a1fd06f7', 'VolumeSize': 10, 'StorageTier': 'standard'
                }, 
                {'Description': 'create a snapshot to create a volume using Boto3', 'Encrypted': False, 
-                'OwnerId': '527779394887', 'Progress': '100%', 'SnapshotId': 'snap-0829e82593a9afb36', 
+                'OwnerId': 'xxxxx', 'Progress': '100%', 'SnapshotId': 'snap-0829e82593a9afb36', 
                 'StartTime': datetime.datetime(2023, 4, 17, 1, 30, 58, 428000, tzinfo=tzutc()), 
                 'State': 'completed', 'VolumeId': 'vol-0c33b9f56a1fd06f7', 'VolumeSize': 10, 
                 'Tags': [{'Key': 'Name', 'Value': 'EBS snapshot'}], 
