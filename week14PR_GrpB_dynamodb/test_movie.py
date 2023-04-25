@@ -1,8 +1,8 @@
 import boto3
 
 dynamodb = boto3.resource('dynamodb', 
-    aws_access_key_id='AKIAXVYQ2OVDZIVL2NX2',
-    aws_secret_access_key='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',region_name='us-east-1')
+    aws_access_key_id='xxxxxxxxxxxxxxxx',
+    aws_secret_access_key='yyyyyyyyyyyyyyyyy',region_name='us-east-1')
 
 table = dynamodb.create_table(
     TableName='Movies',
