@@ -1,0 +1,51 @@
+#!/usr/bin/env python3.10
+# -*- coding: utf-8 -*-
+import argparse
+import logging
+import sys
+from time import sleep
+
+import boto3
+from faker import Faker
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--queue-name", "-q", required=True,
+                    help="SQS queue name")
+parser.add_argument("--interval", "-i", required=True,
+                    help="timer interval", type=float)
+parser.add_argument("--message", "-m", help="message to send")
+parser.add_argument("--log", "-l", default="INFO",
+                    help="logging level")
+args = parser.parse_args()
+
+if args.log:
+    logging.basicConfig(
+        format='[%(levelname)s] %(message)s', level=args.log)
+
+else:
+    parser.print_help(sys.stderr)
+
+### The first lines opens a new session for an IAM user with an assumed role.
+### The second lines then create a sqs service object based on sqs service under the session.
+session = boto3.Session(profile_name="xxxxx", region_name="yy-yyyy-yy")
+sqs = session.client('sqs')
+
+response = sqs.get_queue_url(QueueName=args.queue_name)
+
+queue_url = response['QueueUrl']
+
+logging.info(queue_url)
+
+while True:
+    message = args.message
+    if not args.message:
+        fake = Faker()
+        message = fake.text()
+
+    logging.info('Sending message: ' + message)
+
+    response = sqs.send_message(
+        QueueUrl=queue_url, MessageBody=message)
+
+    logging.info('MessageId: ' + response['MessageId'])
+    sleep(args.interval)
